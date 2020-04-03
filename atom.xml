@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-04-03T09:11:22.438Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Jones Shiyb</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>“【python】win10下anaconda环境切换命令”</title>
+    <link href="http://yoursite.com/2020/04/03/anaconda%E5%88%87%E6%8D%A2/"/>
+    <id>http://yoursite.com/2020/04/03/anaconda%E5%88%87%E6%8D%A2/</id>
+    <published>2020-04-03T09:07:11.000Z</published>
+    <updated>2020-04-03T09:11:22.438Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="python-win10下anaconda环境切换命令"><a href="#python-win10下anaconda环境切换命令" class="headerlink" title="python|win10下anaconda环境切换命令"></a>python|win10下anaconda环境切换命令</h2><p>anacond下载地址:<a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/</a></p><h3 id="activate"><a href="#activate" class="headerlink" title="activate"></a>activate</h3><p>activate 能将我们引入anaconda设定的虚拟环境中, 如果你后面什么参数都不加那么会进入anaconda自带的base环境,如果直接输入python则会直接进入base环境的python解释器，注意，此时命令行前面会多一个（base）说明此时我们处于了一个base环境之下。</p><h4 id="1，创建一个新的虚拟环境"><a href="#1，创建一个新的虚拟环境" class="headerlink" title="1，创建一个新的虚拟环境"></a>1，创建一个新的虚拟环境</h4><p>创建一个名为py36的虚拟环境，并且指定python的版本为3.6,conda会直接下载3.6的最新版本</p><p>conda create -n py36 python=3.6  或者   conda create –name py36  python=3.6</p><p>然后可以查看自己所建立的环境的位置</p><p>打开anaconda prompt,输入where conda可以看到本地的conda路径</p><h4 id="2-切换版本"><a href="#2-切换版本" class="headerlink" title="2,切换版本"></a>2,切换版本</h4><p>打开anaconda prompt</p><p>命令：activate name 例如activate py36</p><p>exit()退出python解释器</p><h4 id="3，卸载环境"><a href="#3，卸载环境" class="headerlink" title="3，卸载环境"></a>3，卸载环境</h4><p>conda remove –name python36 –all</p><h4 id="4-安装第三方包"><a href="#4-安装第三方包" class="headerlink" title="4,安装第三方包"></a>4,安装第三方包</h4><p>输入 conda install gmpy2/conda install pycrypto</p><p>此时安装了gmpy2库和pycrypto库</p><h4 id="5，卸载第三方包"><a href="#5，卸载第三方包" class="headerlink" title="5，卸载第三方包"></a>5，卸载第三方包</h4><p>命令：conda remove requests/ pip uninstall requests</p><h4 id="6-查看环境包信息"><a href="#6-查看环境包信息" class="headerlink" title="6,查看环境包信息"></a>6,查看环境包信息</h4><p>conda list</p><h4 id="7-导入导出环境"><a href="#7-导入导出环境" class="headerlink" title="7,导入导出环境"></a>7,导入导出环境</h4><p>conda env export &gt; environment.yaml </p><p>将包信息存入yaml文件中</p><p>当需要重新创建一个相同的虚拟环境时可以用：conda env create -f environment.yaml</p><hr><p>以下是保存的一些命令，留作备用</p><p>activate // 切换到base环境</p><p>activate learn // 切换到learn环境</p><p>conda create -n learn python=3 // 创建一个名为learn的环境并指定python版本为3(的最新版本) </p><p>conconda list // 列出当前环境的所有包</p><p>conda install requests 安装requests包</p><p>conda remove requests 卸载requets包</p><p>conda remove -n learn –all // 删除learn环境及下属所有包</p><p>conda update requests 更新requests包</p><p>conda env export &gt; environment.yaml // 导出当前环境的包信息</p><p>conda env create -f environment.yaml // 用配置文件创建新的虚拟环境</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;python-win10下anaconda环境切换命令&quot;&gt;&lt;a href=&quot;#python-win10下anaconda环境切换命令&quot; class=&quot;headerlink&quot; title=&quot;python|win10下anaconda环境切换命令&quot;&gt;&lt;/a&gt;pytho
+      
+    
+    </summary>
+    
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>“CTF--Crypto的密码类型（一）”</title>
+    <link href="http://yoursite.com/2020/03/29/crypto/"/>
+    <id>http://yoursite.com/2020/03/29/crypto/</id>
+    <published>2020-03-29T04:41:30.000Z</published>
+    <updated>2020-03-29T05:02:54.871Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="CTF–Crypto的密码类型（一）"><a href="#CTF–Crypto的密码类型（一）" class="headerlink" title="CTF–Crypto的密码类型（一）"></a>CTF–Crypto的密码类型（一）</h2><h5 id="MD5"><a href="#MD5" class="headerlink" title="MD5"></a>MD5</h5><p><a href="https://www.cmd5.com/" target="_blank" rel="noopener">https://www.cmd5.com/</a></p><h5 id="Url"><a href="#Url" class="headerlink" title="Url"></a>Url</h5><p><a href="https://www.convertstring.com/zh_CN/EncodeDecode/UrlDecode" target="_blank" rel="noopener">https://www.convertstring.com/zh_CN/EncodeDecode/UrlDecode</a></p><h5 id="凯撒密码（简单版）"><a href="#凯撒密码（简单版）" class="headerlink" title="凯撒密码（简单版）"></a>凯撒密码（简单版）</h5><p><a href="https://www.qqxiuzi.cn/bianma/kaisamima.php" target="_blank" rel="noopener">https://www.qqxiuzi.cn/bianma/kaisamima.php</a></p><h5 id="base64，32，16"><a href="#base64，32，16" class="headerlink" title="base64，32，16"></a>base64，32，16</h5><p><a href="https://base64.supfree.net/" target="_blank" rel="noopener">https://base64.supfree.net/</a></p><p>python3的解密：</p><p><a href="https://blog.csdn.net/pdsu161530247/article/details/74840422" target="_blank" rel="noopener">https://blog.csdn.net/pdsu161530247/article/details/74840422</a></p><h5 id="摩斯解密"><a href="#摩斯解密" class="headerlink" title="摩斯解密"></a>摩斯解密</h5><p><a href="https://www.jb51.net/tools/morse.htm" target="_blank" rel="noopener">https://www.jb51.net/tools/morse.htm</a></p><h5 id="rabbit"><a href="#rabbit" class="headerlink" title="rabbit"></a>rabbit</h5><p><a href="https://www.sojson.com/encrypt_rabbit.html" target="_blank" rel="noopener">https://www.sojson.com/encrypt_rabbit.html</a></p><h5 id="栅栏密码"><a href="#栅栏密码" class="headerlink" title="栅栏密码"></a>栅栏密码</h5><p><a href="https://www.qqxiuzi.cn/bianma/zhalanmima.php" target="_blank" rel="noopener">https://www.qqxiuzi.cn/bianma/zhalanmima.php</a></p><h5 id="ASCII编码"><a href="#ASCII编码" class="headerlink" title="ASCII编码"></a>ASCII编码</h5><p><a href="http://www.ab126.com/goju/1711.html" target="_blank" rel="noopener">http://www.ab126.com/goju/1711.html</a></p><h5 id="Quoted-printable编码解码"><a href="#Quoted-printable编码解码" class="headerlink" title="Quoted-printable编码解码"></a>Quoted-printable编码解码</h5><p>编码原理和综述参考<a href="https://zh.wikipedia.org/wiki/Quoted-printable" target="_blank" rel="noopener">Quoted-printable编码介绍</a></p><p>编码解码链接<a href="http://www.mxcz.net/tools/QuotedPrintable.aspx" target="_blank" rel="noopener">Quoted-Printable在线编码解密</a></p><h5 id="XXencode编码"><a href="#XXencode编码" class="headerlink" title="XXencode编码"></a>XXencode编码</h5><p>具体原理与算法<a href="http://blog.chacuo.net/778.html" target="_blank" rel="noopener">参考链接</a></p><p><a href="http://web.chacuo.net/charsetxxencode" target="_blank" rel="noopener">XXencode在线编码解码</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;CTF–Crypto的密码类型（一）&quot;&gt;&lt;a href=&quot;#CTF–Crypto的密码类型（一）&quot; class=&quot;headerlink&quot; title=&quot;CTF–Crypto的密码类型（一）&quot;&gt;&lt;/a&gt;CTF–Crypto的密码类型（一）&lt;/h2&gt;&lt;h5 id=&quot;M
+      
+    
+    </summary>
+    
+    
+    
+      <category term="crypto" scheme="http://yoursite.com/tags/crypto/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>“少年”</title>
+    <link href="http://yoursite.com/2020/03/28/shaonian/"/>
+    <id>http://yoursite.com/2020/03/28/shaonian/</id>
+    <published>2020-03-28T13:55:15.000Z</published>
+    <updated>2020-03-28T14:27:53.321Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="《少年》–梦然"><a href="#《少年》–梦然" class="headerlink" title="《少年》–梦然"></a>《少年》–梦然</h2><p>  最近很喜欢《少年》这首歌，“我还是从前那个少年，没有一丝丝改变”，这让我想到了自己……</p><p>  想当年，（哈哈哈哈哈，虽然距离没多长时间，但距离现在感觉真的是想当年）在那大约小学初中的日子，在那个无忧无虑的生活中，我踌躇满志，想当科学家（现在感觉头秃，完全不想），想经商（毕竟钱是王道啊），还想去业余当个旅行家。直到我上了高中，呵呵，万物皆是空，放下一切，立地成佛…….高中那无穷无尽的试题，肉眼可见的竞争把我这个无忧无虑的人搞了个半死。</p><p>  不过还好，结局还算可以，考到了我现在的学校，认识了许多优秀的人。“时间只不过是考验，种在心中信念丝毫未减”，在大炮师兄的帮助下我成功的搭建了自己的个人博客，这个博客用来记录我的学习生涯，日常生活和心情随笔，希望自己能够在信安这条路上坚持下去，将来回头看看，也不过如此。毕竟，现在觉得痛苦的一切，在以后的将来都会是不可多得的一笔财富………</p><p>  最后请大家一起来看我威本联盟啊哈哈哈哈</p><iframe src="//player.bilibili.com/player.html?aid=99757095&bvid=BV1J741197FY&cid=170241768&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" > </iframe>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;《少年》–梦然&quot;&gt;&lt;a href=&quot;#《少年》–梦然&quot; class=&quot;headerlink&quot; title=&quot;《少年》–梦然&quot;&gt;&lt;/a&gt;《少年》–梦然&lt;/h2&gt;&lt;p&gt;  最近很喜欢《少年》这首歌，“我还是从前那个少年，没有一丝丝改变”，这让我想到了自己……&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+      <category term="lifes" scheme="http://yoursite.com/tags/lifes/"/>
+    
+  </entry>
+  
+</feed>
