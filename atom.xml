@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-03T09:11:22.438Z</updated>
+  <updated>2020-04-04T17:15:54.344Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>“WinError 127”</title>
+    <link href="http://yoursite.com/2020/04/03/WinError%20127/"/>
+    <id>http://yoursite.com/2020/04/03/WinError%20127/</id>
+    <published>2020-04-03T10:33:30.000Z</published>
+    <updated>2020-04-04T17:15:54.344Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="WinError-127"><a href="#WinError-127" class="headerlink" title="WinError 127"></a>WinError 127</h2><h3 id="anaconda下载安装包时出现-WinError-127-找不到指定的程序错误"><a href="#anaconda下载安装包时出现-WinError-127-找不到指定的程序错误" class="headerlink" title="anaconda下载安装包时出现[WinError 127] 找不到指定的程序错误"></a>anaconda下载安装包时出现[WinError 127] 找不到指定的程序错误</h3><p>出现这个问题的原因是两个.dll文件日期不同</p><p>【解决方法】删除Library&gt;bin中的libssl-1_1-x64，将DLLs中的libssl-1_1-x64复制过去即可</p><p><img src="http://i2.tiimg.com/714307/f0a7a3531bc5954c.png" alt="Markdown" style="zoom:50%;" /><img src="http://i2.tiimg.com/714307/89883c3ee682254c.png" alt="Markdown"></p><p><img src="http://i2.tiimg.com/714307/f0a7a3531bc5954c.png" alt="Markdown" style="zoom:50%;" /><img src="http://i2.tiimg.com/714307/89883c3ee682254c.png" alt="Markdown"></p><p><img src="http://i2.tiimg.com/714307/4a3f52f19603fd32.png" alt="Markdown"></p><img src="http://i2.tiimg.com/714307/204a726f4db71b0b.png" alt="Markdown" style="zoom:50%;" />]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;WinError-127&quot;&gt;&lt;a href=&quot;#WinError-127&quot; class=&quot;headerlink&quot; title=&quot;WinError 127&quot;&gt;&lt;/a&gt;WinError 127&lt;/h2&gt;&lt;h3 id=&quot;anaconda下载安装包时出现-WinError
+      
+    
+    </summary>
+    
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>“【python】win10下anaconda环境切换命令”</title>
